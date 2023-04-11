@@ -184,6 +184,11 @@ body {
   flex-grow: 0;
 }
 
+.source {
+  font-size: 12px;
+  margin: 8px;
+}
+
 @media screen and (min-width: 768px) {
   #input-text {
     min-height: 500px;
