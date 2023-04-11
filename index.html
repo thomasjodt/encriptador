@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>ONE Challenge 1 - Encriptador</title>
+  <link rel='stylesheet' href='./main.css'>
+
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap' rel='stylesheet'>
+
+  <script src='./main.js' defer></script>
+</head>
+<body>
+  <header class='logo-container'>
+    <img class='logo' src='./assets/Vector.png' alt='Alura Latam logo'>
+  </header>
+
+  <section class='input-box'>
+    <textarea
+      name='input-text'
+      id='input-text'
+      cols='30'
+      rows='10'
+      placeholder='Ingrese el texto aquí'
+    ></textarea>
+
+    <div class='hint'>
+      <img src='./assets/alert-octagon.svg' alt='Ícono de pista'>
+      <span>Solo letras minúsculas y sin acentos</span>
+    </div>
+
+    <section class='buttons'>
+
+      <button
+        id='encriptar'
+        class='button button__primary'
+      >Encriptar
+      </button>
+
+      <button
+        id='desencriptar'
+        class='button button__secondary'
+      >Desencriptar
+      </button>
+
+    </section>
+  </section>
+
+  <div class='output-box'>
+    <div class='output'>
+
+      <div id="not-found">
+        <img
+        class='muñeco'
+        src='./assets/Muñeco.png'
+        alt='Ícono sin texto que codificar.'
+      >
+      <h2>Ningún mensaje encontrado</h2>
+      </div>
+
+      <output id='outText'>
+        Ingresa el texto que desees encriptar o desencriptar.
+      </output>
+
+      <button
+        id='copiar'
+        class='button button__secondary'
+      >Copiar
+      </button>
+    </div>
+
+  </div>
+
+</body>
+</html>
