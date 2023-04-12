@@ -98,12 +98,11 @@ body {
   font-size: 16px;
   border-radius: 24px;
   background-color: transparent;
-  cursor: pointer;
   transition: all 200ms;
 }
 
 .button__primary:hover {
-  background-color: var(--dark-blue-400) !important;
+  background-color: var(--dark-blue-200) !important;
 }
 
 .button__primary {
