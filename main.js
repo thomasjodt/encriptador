@@ -56,3 +56,14 @@ $copyText.onclick = async () => {
     console.error('Failed to copy')
   }
 }
+
+$inputText.onkeydown = (e) => {
+  const replacements = { á: 'a', é: 'e', í: 'i', ó: 'o', ú: 'u' }
+
+  for (key in replacements) {
+    if (e.key.toLowerCase() === key ) {
+      e.preventDefault()
+      $inputText.value += replacements[key]
+    }
+  }
+}
