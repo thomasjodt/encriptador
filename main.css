@@ -183,9 +183,18 @@ body {
   flex-grow: 0;
 }
 
-.source {
+footer {
+  grid-column: 1 / 4;
+  width: 100%;
+  color: var(--white);
+  padding-block: 8px;
+  text-align: center;
+  background-color: var(--dark-blue-300);
+}
+
+footer .source {
   font-size: 12px;
-  margin: 8px;
+  color: var(--white);
 }
 
 @media screen and (min-width: 768px) {
